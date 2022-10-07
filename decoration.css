@@ -1,0 +1,363 @@
+.bg {
+    /* Full height */
+    background-image: url("/image/4.jfif");
+    height: 100%;
+    opacity: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+#lucky{
+    position: absolute;
+    /* top: 80px; */
+    bottom:50px;
+    left:400px;
+}
+
+#play{
+    position: absolute;
+    /* top: 80px; */
+
+    /* width:15px; */
+    width:30px;
+    bottom:50px;
+    left:780px;
+}
+
+#us{
+    position: absolute;
+    /* top: 80px; */
+    width:30px;
+    bottom:110px;
+    left:700px;
+}
+
+#mailbox{
+  position:absolute;
+  width:40px;
+  bottom:50px;
+  left:1100px;
+}
+
+/* #day{
+    text-size-adjust: 100px;
+    
+} */
+
+#day {
+    text-align: center;
+    /* 重点，要上面没空白 */
+    block-size: auto;
+    margin-top:0;
+    margin-bottom:0;
+    height:210px;
+    font-size: 200px;
+    color:gold;
+    text-shadow: 2px 2px 5px rgb(239, 235, 111);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+/* #认识 {
+    text-align: center;
+    margin-top:0;
+    margin-bottom:0;
+    color:gold;
+    text-shadow: 2px 2px 5px rgb(239, 235, 111);
+}
+ */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* #5cb85c */
+.modal-header {
+    padding: 2px 16px;
+    background-image: linear-gradient(to bottom right, #113452, #385573);
+    /* background-color: #6961de; */
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-image: linear-gradient(to top right, #113452, #385573);
+    /* background-color: #6961de; */
+    color: white;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 40px #34b3c1, 0 0 10px #4dbbc7;
+    }
+}
+
+
+/* Lucky!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#myImgLucky {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImgLucky:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modalLucky {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-contentLucky {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 100px;
+    /* 800px 卷 */
+  }
+  
+  /* Add Animation */
+  .modal-contentLucky{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .closeLucky {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .closeLucky:hover,
+  .closeLucky:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+  /* 星星漂浮咒 */
+  #star_div {
+    -webkit-animation: float 3s infinite alternate;
+            animation: float 3s infinite alternate;
+  }
+  #day {
+    -webkit-animation: float_small 3s infinite alternate;
+            animation: float_small 3s infinite alternate;
+  }
+  @-webkit-keyframes float {
+    from {
+      transform: translateY(0.5em);
+    }
+    to {
+      transform: translateY(-0.5em);
+    }
+  }
+  @keyframes float {
+    from {
+      transform: translateY(0.5em);
+    }
+    to {
+      transform: translateY(-0.5em);
+    }
+  }
+
+  @-webkit-keyframes float_small {
+    from {
+      transform: translateY(0.1em);
+    }
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  @keyframes float_small {
+    from {
+      transform: translateY(0.1em);
+    }
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+.line-1{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 50%;
+  color: rgb(205, 193, 125);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) 10 normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+#talk{
+  top:0px;
+  left:500px;
+}
+
+/* Love */
+.bg_heart {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.heart {
+  position: absolute;
+  top: -50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -m-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+
+.heart:before {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+
+.heart:after {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes love {
+0%{top:110%}
+}
+@-moz-keyframes love {
+0%{top:110%}
+}
+@-ms-keyframes love {
+0%{top:110%}
+}
+@keyframes love {
+0%{top:110%}
+}

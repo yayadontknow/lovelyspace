@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta title="LOVE"/>
+        <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+        <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            }
+        body {
+            font-family: 'Coiny';font-size: 22px;
+        }
+        </style>
+        <link rel="stylesheet" href="decoration.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <audio id="mySong" loop>
+            <source src="night.mp3" type="audio/mp3">
+        </audio>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">×</span>
+                <h2>· 小幸运</h2>
+                </div>
+                <div class="modal-body">
+                <p id="star-text">我爱你丫丫丫</p>
+                </div>
+                <div class="modal-footer">
+                <h3>·</h3>
+                </div>
+            </div>
+            
+        </div>
+        <!-- The Modal Lucky -->
+        <div id="myModalLucky" class="modalLucky">
+            <span class="closeLucky">&times;</span>
+            <img class="modal-contentLucky" id="lucky1">
+        </div>
+
+        <div class="bg bg_heart">
+            <div id="star_div">          
+                <img src="/image/star.png" class = "myStar" width="20"/>
+            </div>
+            <img src="/image/play.png" id="play" width="20"/>
+            <img src="/image/us.png" id="us" width="20"/>
+            <input type="image" src="/image/mailbox.png" value="writing" id="mailbox" onclick="location.href='write.html'"/>
+            <script>
+                var mySong = document.getElementById("mySong");
+                mySong.volume = 0.5;
+                var icon = document.getElementById("play");
+                icon.onclick = function(){
+                    if(mySong.paused){
+                        mySong.play();
+                    }
+                    else{
+                        mySong.pause();
+                    }
+                }
+            </script>
+            <img src="/image/lucky.png" id="lucky" class="lucky" width="40"/>
+            </br>
+            </br>
+            <h2 id="day">dfas</h2>
+            <p class="line-1 anim-typewriter" id="talk">
+                生日快乐鸭❤我的小可爱，佳榆~<br/>
+                来来来，今日寿星有大优惠哦，免费十连抽！<br/>
+                之后记得来领取你的奖励哦，嘿嘿(●ˇ∀ˇ●)<br/>
+                谢谢你陪伴了我那么久，虽然是九岁，哦不！<br/>
+                是十岁，但你还是很爱我啦，赞赞❤<br/>
+                <br/>
+                天大地大，寿星最大！<br/>
+                寿星万岁，万岁，万万岁！<br/>
+                ~\(≧▽≦)/~<br/>
+                我爱你，我爱你，我超级无敌霹雳爱你！<br/>
+                所以其中一个愿望要祝我们好好的哦o(*￣▽￣*)o<br/>
+
+            </p>
+            <script type="module" src="script1.js"></script>
+        </div>
+
+    </body>
+</html>
