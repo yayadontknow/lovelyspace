@@ -2,7 +2,7 @@
 var number = Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
 var star_div = document.getElementById("star_div");
 for(var i=0;i<number;i++){
-    star_div.innerHTML = star_div.innerHTML + '<img src="./image/star.png" class = "myStar" width="20"/>';
+    star_div.innerHTML = star_div.innerHTML + '<img src="star.png" class = "myStar" width="20"/>';
 }
 var array1=["我爱你鸭","我要代表月亮保护你","感谢神把那么可爱的你给我哈~","抱抱","爱爱","亲亲","举高高","想抱你~","LOVE","KISS","SMASH","HUG","时间过得快一点啊","抱抱","宝宝~","按摩摩","吃饭饭","亲亲","爱爱","睡觉觉","躺躺"];
 var img = document.getElementsByClassName('myStar');
@@ -14,13 +14,13 @@ for (const star of img) {
     star.style.width = (Math.floor(Math.random() * 20) + 10) + "px";
     star.style.transform =  `rotate(${Math.floor(Math.random() * 180+90)}deg)`
     star.addEventListener("mouseover",function(){
-        this.src="/image/star1.png";
+        this.src="star1.png";
         console.log("1");
     });
     
     
     star.addEventListener("mouseout",function(){
-        this.src="/image/star.png";
+        this.src="star.png";
         console.log("2");
     });
     
@@ -86,20 +86,20 @@ lucky.onclick = function(){
   var ball_color = Math.floor(Math.random() * 7);
   ball_color_both = ball_color;
   modalLucky.style.display = "block";
-  modalImgLucky.src = "./image/"+arr_color[ball_color_both];
+  modalImgLucky.src = arr_color[ball_color_both];
 }
 
 modalImgLucky.onclick = function(){
     if(count==0){
         modalImgLucky.style.maxWidth="100px";
-        modalImgLucky.src = "./image/"+arr_color_open[ball_color_both];
+        modalImgLucky.src = arr_color_open[ball_color_both];
         count=1;
         
     }
     else if(count==1){
         modalImgLucky.style.maxWidth = "800px";
         var ticket = Math.floor(Math.random() * 5);
-        modalImgLucky.src = "./image/"+arr_ticket[ticket];
+        modalImgLucky.src = arr_ticket[ticket];
         count=2; 
     }
     else if(count==2){
