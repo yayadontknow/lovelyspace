@@ -239,6 +239,13 @@
     -webkit-animation: float_small 3s infinite alternate;
             animation: float_small 3s infinite alternate;
   }
+  #bText {
+    width: 400px;
+    position: absolute;
+    left: 550px;
+    -webkit-animation: float 3s infinite alternate;
+            animation: float 3s infinite alternate;
+  }
   @-webkit-keyframes float {
     from {
       transform: translateY(0.5em);
