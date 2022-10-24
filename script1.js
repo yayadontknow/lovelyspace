@@ -189,3 +189,24 @@ var love = setInterval(function () {
         clearInterval(love);
     }
 }, 2000);
+
+
+// Get the modal
+var modalGift = document.getElementById("myModalGift");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imgGift = document.getElementById("myImgGift");
+var modalImgGift = document.getElementById("img01Gift");
+imgGift.onclick = function(){
+  modalGift.style.display = "block";
+  modalImgGift.src = "/image/birth.png";
+  modalImgGift.style.width = "450px"
+}
+
+// Get the <span> element that closes the modal
+var spanGift = document.getElementsByClassName("closeGift")[0];
+
+// When the user clicks on <span> (x), close the modal
+spanGift.onclick = function() { 
+  modalGift.style.display = "none";
+}
