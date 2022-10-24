@@ -199,7 +199,7 @@ var imgGift = document.getElementById("myImgGift");
 var modalImgGift = document.getElementById("img01Gift");
 imgGift.onclick = function(){
   modalGift.style.display = "block";
-  modalImgGift.src = "/image/birth.png";
+  modalImgGift.src = "birth.png";
   modalImgGift.style.width = "450px"
 }
 
