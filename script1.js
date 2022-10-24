@@ -193,14 +193,17 @@ var love = setInterval(function () {
 
 // Get the modal
 var modalGift = document.getElementById("myModalGift");
-
+function playAudio(url) {
+    new Audio(url).play();
+}
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imgGift = document.getElementById("myImgGift");
 var modalImgGift = document.getElementById("img01Gift");
 imgGift.onclick = function(){
   modalGift.style.display = "block";
   modalImgGift.src = "birth.png";
-  modalImgGift.style.width = "450px"
+  modalImgGift.style.width = "450px";
+  playAudio('birthdaySong.mp3')
 }
 
 // Get the <span> element that closes the modal
