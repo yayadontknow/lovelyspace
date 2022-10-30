@@ -114,6 +114,7 @@ var span = document.getElementsByClassName("closeLucky")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modalLucky.style.display = "none";
+    count = 0
 }
 
 
